@@ -1,0 +1,14 @@
+<html>
+<body>
+
+<h1>My SVG</h1>
+
+<svg width="300" height="300">
+  <circle cx="150" cy="150" r="100" stroke="black" stroke-width="4" fill="black" />
+  <ellipse cx="150" cy="180" rx="120" ry="90"
+  style="fill:white;stroke:white;stroke-width:2" />
+  <polygon points="200,10 250,190 160,210" style="fill:white;stroke:white;stroke-width:1" />
+</svg>
+
+</body>
+</html>
