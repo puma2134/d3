@@ -15,7 +15,7 @@ d3.csv("./incidentrate.csv",
 	{
 		var ln = data.length;
 		console.log(data);
-		var maxy = d3.max(data, function(d){ return (d.incident_rate); });
+		var maxy = d3.max(data, function(d){ return d.incident_rate; });
 		var lines = d3.line().x(function(d,i){return i*(width/(ln-1978));}).y(function(d){return height-(d.incident_rate)*(height/maxy)});
 		ctrl.append("path").data([data]).attr("d", lines).attr("incident_rate", "blue").attr("fill", "none");
 	}
